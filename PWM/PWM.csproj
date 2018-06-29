@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2F0EABF3-467D-4F47-9F90-8158AB3D64D2}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PWM</RootNamespace>
     <AssemblyName>PWM</AssemblyName>
@@ -71,6 +71,9 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>PWM.Console</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="igfxDHLibv2_0">
       <HintPath>.\igfxDHLibv2_0.dll</HintPath>
@@ -89,6 +92,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Console.cs" />
     <Compile Include="PWM.cs">
       <SubType>Form</SubType>
     </Compile>
